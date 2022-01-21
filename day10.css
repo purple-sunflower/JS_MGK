@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    color: ivory;
+}
+
+h1 {
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+p {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+#calling {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: darkolivegreen;
+    color: ivory;
+    padding: 10px 20px;
+}
+
