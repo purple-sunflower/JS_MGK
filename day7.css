@@ -1,0 +1,64 @@
+.container {
+    width: 400px;
+    height: 250px;
+    background-color: pink;
+
+    position: relative;
+    top: 100px;
+    left: 100px;
+
+    border-radius: 20px;
+}
+
+.time-box {
+    position: absolute;
+    background-color: ivory;
+    border-radius: 20px;
+
+    top: 30px;
+    left: 30px;
+    width: 340px;
+    height: 120px;
+}
+
+h1 {
+    font-size: 60px;
+    color: blueviolet;
+
+    position: absolute;
+    top: -25px;
+    left: 10px;
+}
+
+.button-box {
+    position: relative;
+    top: 180px;
+    left: 50px;
+}
+
+button {
+    border-radius: 20px;
+    font-size: 25px;
+    color: darkslategray;
+}
+
+#start {
+    background-color: powderblue;
+    border-color: powderblue;
+}
+
+#stop {
+    position: absolute;
+    left: 110px;
+
+    background-color: lightgreen;
+    border-color: lightgreen;
+}
+
+#reset {
+    position: absolute;
+    left: 220px;
+
+    background-color: lightyellow;
+    border-color: lightyellow;
+}
