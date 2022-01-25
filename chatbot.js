@@ -1,4 +1,6 @@
 var p = document.getElementsByTagName('p');
+var body = document.getElementsByTagName('body');
+var box = document.getElementsByClassName("box");
 
 function check_text() {
     var value = document.getElementById("message").value;
@@ -30,6 +32,20 @@ function check_text() {
 
     else if (value == "다른 놀이는 없어?") {
         p[0].innerHTML = "너가 원하는 걸 말해봐!"
+    }
+
+    else if (value == "불 꺼줘") {
+        body[0].style.backgroundColor ="black";
+    }
+
+    else if (value == "깜깜해.. 다시 불 켜줘!") {
+        body[0].style.backgroundColor ="antiquewhite";
+    }
+    else if (value == "대화창 색을 바꿔볼까?") {
+        box[0].style.backgroundColor ="darkgray";
+    }
+    else if (value == "원래대로 바꾸자!") {
+        box[0].style.backgroundColor ="ivory";
     }
 
 	else {
