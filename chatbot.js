@@ -1,6 +1,8 @@
 var p = document.getElementsByTagName('p');
 var body = document.getElementsByTagName('body');
 var box = document.getElementsByClassName("box");
+var repeat = document.getElementById("dog_saying");
+var n = 0;
 
 function check_text() {
     var value = document.getElementById("message").value;
@@ -15,7 +17,17 @@ function check_text() {
     }
 
     else if (value == "어떤 놀이를 할 수 있는데?") {
-        p[0].innerHTML = "(1) 원반던지기 (2) 노즈워크 (3) 터그놀이"
+        if(n==0) {
+            n++;
+            p[0].innerHTML="알고 싶어? 그러면 다시 입력해 봐~";
+        }
+        else if(n==1) {
+            n++;
+            p[0].innerHTML="힝 속았지>.@ 한 번만 더 입력해 봐!";
+        }
+        else {
+            p[0].innerHTML="(1)원반던지기 (2)노즈워크 (3)터그놀이";
+        }
     }
 
     else if (value == "원반던지기 할래!") {
@@ -47,7 +59,6 @@ function check_text() {
     else if (value == "원래대로 바꾸자!") {
         box[0].style.backgroundColor ="ivory";
     }
-
 	else {
 		alert("아직 개발 중 입니다 :) 다시 입력해주세요.");
 	}
