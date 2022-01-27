@@ -4,6 +4,20 @@ var box = document.getElementsByClassName("box");
 var repeat = document.getElementById("dog_saying");
 var n = 0;
 
+var typewriter = new Typewriter(repeat, {
+    loop: false
+});
+
+typewriter.typeString("나는 사실 자고 싶어! 졸리거든..")
+    .pauseFor(1300)
+    .start();
+
+    typewriter
+    .deleteAll()
+    .typeString("자는 건 예상치 못했지? :)")
+    .pauseFor(2500)
+    .start();
+
 function check_text() {
     var value = document.getElementById("message").value;
     console.log(value);
@@ -63,3 +77,4 @@ function check_text() {
 		alert("아직 개발 중 입니다 :) 다시 입력해주세요.");
 	}
 }
+
